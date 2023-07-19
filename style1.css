@@ -1,0 +1,51 @@
+
+.signupModal{
+    background-color: rgb(98, 245, 179);
+    padding: 20px;
+    width: 40%;
+    border: 1px solid grey;
+    height: 80vh;
+    overflow: auto;
+    border-radius: 10px;
+    
+}
+form {
+    display: grid;
+    gap: 10px;
+  }
+
+label{
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+input{
+    border: 1px solid grey;
+}
+.form-check-label{
+     font-weight: lighter;
+     font-size: 18px;
+}
+.gradient-animation {
+    text-align: center;
+    padding-top: 10px;
+    
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #92ff52, #33b5e5, #9dff52, #33b5e5);
+    background-size: 400%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradientAnimation 6s linear infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 400% 50%;
+    }
+  }

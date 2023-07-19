@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUpForm</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+</head>
+<body style="background-image: url(img/fw-bg-gradient.png); background-size: cover;">
+  <div class="gradient-animation">
+    <span class="animated-text">Shaurya</span>
+  </div>
+<div class="modal" style="display: flex; width: 100%; height: 100vh; justify-content: center; align-items: center; " >
+  
+  <div class="signupModal" id="signupModal">
+    <div id="userCounter" style="float: right; font-weight: bold; font-family: 'Lilita One', cursive; ">Registered Users: 0</div>
+        <h4 style=" margin-left: 70px; text-align: center; font-family: 'Lilita One', cursive; font-size: 30px;">SignUp </h4>
+<form id="signupForm">
+  <div class="mb-3">
+    <label for="Name" class="form-label">Name:</label>
+    <input type="text"  id="Name" class="form-control"  minlength="5" pattern="[A-Za-z\s]+" required >
+</div>
+<div class="mb-3">
+    <label for="InputEmail1">Email Address:</label>
+    <input type="email" class="form-control" id="InputEmail1" pattern="[a-zA-Z0-9._%+-]+@gmail\.com$" required>
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="InputPassword1" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" minlength="8" required >
+  </div>
+  <div class="mb-3">
+    <label for="PhoneNumber" >Phone Number:</label>
+    <input type="tel" class="form-control" id="phone" pattern="[0-9]{10}" required >
+  </div>
+  <div id="genderOptions">
+  <label style="margin-right: 10px;" for="gender">Gender:</label>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+    <label class="check-label" for="inlineRadio1">Male</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+    <label class="check-label" for="inlineRadio2">Female</label>
+  </div>
+  
+  <div class="form-check form-check-inline">
+    
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" >
+    <label class="check-label" for="inlineRadio3">Other</label>
+  </div>
+</div>
+  <div>
+  <label style="margin-right: 10px;" for="sports">Sports Interested In:</label>
+  <hr style="margin: 5px;">
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+    <label class="form-check-label" for="inlineCheckbox1">Football</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+    <label class="form-check-label" for="inlineCheckbox2">Basketball</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+    <label class="form-check-label" for="inlineCheckbox3">Tennis</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+    <label class="form-check-label" for="inlineCheckbox4">Cricket</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+    <label class="form-check-label" for="inlineCheckbox5">Volleyball</label>
+  </div>
+</div>
+
+<button style="margin-top: 20px; " type="submit" class="btn btn-info">SignUp</button> 
+</form>
+</div>
+</div>
+<script src="script.js"></script>
+    
+</body>
+</html>
